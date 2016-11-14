@@ -25,7 +25,7 @@ function appendJokesToDom(data) {
     var joke = data[i];
     $('.joke-container').append('<p>Name: ' + joke.whoseJoke + '</p><p>' + joke.jokeQuestion + '</p><p>' + joke.punchLine + '</p>');
   }
-  $('p').fadeIn('slow');
+  $('p').css({'display': 'block'});
 }
 
 //function to push users joke to the server
@@ -68,4 +68,5 @@ function getLastJoke(data) {
 function appendLastJoke(data) {
   var lastJoke = data.length - 1;
   $('.joke-container').append('<p>Name: ' + data[lastJoke].whoseJoke + '</p><p>' + data[lastJoke].jokeQuestion + '</p><p>' + data[lastJoke].punchLine + '</p>');
+  $('p').fadeIn('slow');
 }
