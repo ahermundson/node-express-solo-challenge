@@ -7,16 +7,23 @@ h1 {
 }
 
 body {
-  background-color: black;
+  background-color: rgb(229,255,218);
   display: flex;
   justify-content: center;
+  
 }
 
 .outer-container {
   width: 80%;
-  background-color: blue;
-  color: white;
+  background-color: rgb(201,232,255);
+  color: rgb(3,12,146);
   border-radius: 10px;
   padding-bottom: 25px;
   padding-left: 10px;
+}
+
+button {
+  border-style: none;
+  border-radius: 0;
+  background-color: white;
 }
